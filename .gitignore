@@ -1,0 +1,30 @@
+# Binaries
+/bot
+/stickerbot
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Database
+*.db
+*.db-journal
+*.sqlite3
+
+# User data & Config
+.env
+.env.*
+!.env.example
+/data/
+
+# OS/IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Go tools
+go.work
+go.work.sum

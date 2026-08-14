@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      # Optional: tmpfs for RAM buffer. Uncomment if BOOST_BY_RAM=true
+      # - type: tmpfs
+      #   target: /tmp/ramdisk
+      #   tmpfs:
+      #     size: 256m
