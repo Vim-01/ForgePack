@@ -1,6 +1,6 @@
 # Binaries
 /bot
-/stickerbot
+/forgepack
 *.exe
 *.exe~
 *.dll

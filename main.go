@@ -3,15 +3,15 @@ package main
 import (
 	"log"
 
-	"stickerbot/bot"
-	"stickerbot/config"
-	"stickerbot/database"
-	"stickerbot/media"
-	"stickerbot/queue"
+	"forgepack/bot"
+	"forgepack/config"
+	"forgepack/database"
+	"forgepack/media"
+	"forgepack/queue"
 )
 
 func main() {
-	log.Println("Starting Sticker Bot...")
+	log.Println("Starting ForgePack...")
 
 	cfg := config.LoadConfig()
 	db := database.InitDB("bot.db", cfg.OwnerID)
