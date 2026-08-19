@@ -1,6 +1,6 @@
 # Binaries
-/bot
-/forgepack
+
+
 *.exe
 *.exe~
 *.dll
@@ -28,3 +28,4 @@
 # Go tools
 go.work
 go.work.sum
+/forgepack_bin

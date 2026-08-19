@@ -1,12 +1,15 @@
 import sys
 import os
-from rembg import remove
+from rembg import remove, new_session
 from PIL import Image
+
+# Initialize the lightweight model session for 1GB VDS
+session = new_session("u2netp")
 
 def process_file(input_path, output_path):
     try:
         input_image = Image.open(input_path)
-        output_image = remove(input_image)
+        output_image = remove(input_image, session=session)
         output_image.save(output_path)
         print(f"SUCCESS:{output_path}")
     except Exception as e:
